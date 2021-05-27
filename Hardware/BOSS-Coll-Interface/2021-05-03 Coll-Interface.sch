@@ -751,6 +751,7 @@
 <sheets>
 <sheet>
 <plain>
+<text x="73.66" y="45.72" size="1.778" layer="250">C1 Holes for leads too small</text>
 </plain>
 <instances>
 <instance part="J1" gate="A" x="53.34" y="53.34" smashed="yes">

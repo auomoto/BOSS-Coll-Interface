@@ -356,9 +356,9 @@
 <pad name="2.1" x="2.54" y="0" drill="1.2"/>
 <pad name="2.2" x="2.54" y="-5.08" drill="1.2"/>
 </package>
-<package name="U1-EE_NCH" urn="urn:adsk.eagle:footprint:27672258/1" library_version="434">
-<pad name="1" x="0" y="0" drill="0.762" diameter="1.27" shape="square"/>
-<pad name="2" x="7.493" y="0" drill="0.762" diameter="1.27" rot="R180"/>
+<package name="U1-EE_NCH" urn="urn:adsk.eagle:footprint:27672258/2" library_version="449">
+<pad name="1" x="0" y="0" drill="1" diameter="1.5" shape="square"/>
+<pad name="2" x="7.493" y="0" drill="1" diameter="1.5" rot="R180"/>
 <wire x1="-5.7912" y1="0" x2="-4.5212" y2="0" width="0.1524" layer="21"/>
 <wire x1="-5.1308" y1="0.635" x2="-5.1308" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="11.8872" y1="0" x2="-4.3688" y2="0" width="0.1524" layer="21" curve="-180"/>
@@ -421,7 +421,7 @@
 <packageinstance name="TE_1-2834016-2"/>
 </packageinstances>
 </package3d>
-<package3d name="U1-EE_NCH" urn="urn:adsk.eagle:package:27672260/2" type="model" library_version="434">
+<package3d name="U1-EE_NCH" urn="urn:adsk.eagle:package:27672260/3" type="model" library_version="449">
 <packageinstances>
 <packageinstance name="U1-EE_NCH"/>
 </packageinstances>
@@ -679,7 +679,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ELECTROLYTIC_UHE1H471MHD3" urn="urn:adsk.eagle:component:27672261/4" prefix="C" library_version="436">
+<deviceset name="ELECTROLYTIC_UHE1H471MHD3" urn="urn:adsk.eagle:component:27672261/5" prefix="C" library_version="449">
 <gates>
 <gate name="A" symbol="CAPH" x="0" y="0" swaplevel="1"/>
 </gates>
@@ -690,7 +690,7 @@
 <connect gate="A" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27672260/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27672260/3"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -745,12 +745,14 @@
 <part name="J1" library="AUmlib" library_urn="urn:adsk.eagle:library:9166017" deviceset="PINHD-2X2" device="AMP-75869-130LF" package3d_urn="urn:adsk.eagle:package:24897806/2" value="Amphenol 75869-330LF"/>
 <part name="X1" library="AUmlib" library_urn="urn:adsk.eagle:library:9166017" deviceset="DE-37-TE-CONNECTIVITY-5747835-4" device="" package3d_urn="urn:adsk.eagle:package:28471019/2" value="TE 5747835-4"/>
 <part name="J2" library="AUmlib" library_urn="urn:adsk.eagle:library:9166017" deviceset="TERMINAL_BLOCK_2PIN_1-2834016-2" device="" package3d_urn="urn:adsk.eagle:package:27672122/2" value="TE_1-2834016-2"/>
-<part name="C1" library="AUmlib" library_urn="urn:adsk.eagle:library:9166017" deviceset="ELECTROLYTIC_UHE1H471MHD3" device="" package3d_urn="urn:adsk.eagle:package:27672260/2" value="UHE1H471MHD3"/>
+<part name="C1" library="AUmlib" library_urn="urn:adsk.eagle:library:9166017" deviceset="ELECTROLYTIC_UHE1H471MHD3" device="" package3d_urn="urn:adsk.eagle:package:27672260/3" value="UHE1H471MHD3"/>
 <part name="D1" library="AUmlib" library_urn="urn:adsk.eagle:library:9166017" deviceset="SCHOTTKY-PMEG6030EVPX" device="" package3d_urn="urn:adsk.eagle:package:28188986/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="73.66" y="43.18" size="1.778" layer="250">C1 Holes for leads were too small;
+Updated on 2021-05-22</text>
 </plain>
 <instances>
 <instance part="J1" gate="A" x="53.34" y="53.34" smashed="yes">
@@ -852,6 +854,10 @@
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
